@@ -24,7 +24,7 @@ exports.createTodo = async (req, res) => {
   }
 };
 
-/* exports.getTodosByUser = async (req, res) => {
+exports.getTodosByUser = async (req, res) => {
   try {
     const { userId } = req.params;
 
@@ -39,7 +39,7 @@ exports.createTodo = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Failed to retrieve todos" });
   }
-}; */
+};
 
 exports.getTodoById = async (req, res) => {
   try {
